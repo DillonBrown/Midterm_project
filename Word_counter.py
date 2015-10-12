@@ -20,7 +20,7 @@ for unique in uniques:
 
 counts.sort()            # Sorting the list puts the lowest counts first.
 counts.reverse()         # Reverse it, putting the highest counts first.
-# Print the ten words with the highest counts.
+# Print the fifteen words with the highest counts.
 for i in range(min(15, len(counts))):
   count, word = counts[i]
   print('%s appeared %d times' % (word, count))
