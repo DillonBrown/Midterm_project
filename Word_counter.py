@@ -1,6 +1,8 @@
 __author__ = 'SFU'
+import string
 
-words = open('data/Gettysburg_Address.txt').read().lower().split()
+# reads the txt file, converts it to lower case, deletes punctuation and double hyphens, then splits it into an array
+words = open('data/speech.txt').read().lower().replace(string.punctuation, "").replace("--", "").split()
 
 # Get the set of unique words.
 uniques = []
